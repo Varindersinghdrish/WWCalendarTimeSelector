@@ -1,4 +1,3 @@
-
 // swift-tools-version:5.3
 import PackageDescription
 
@@ -17,10 +16,10 @@ let package = Package(
         .target(
             name: "WWCalendarTimeSelector",
             dependencies: [],
-            path: "WWCalendarTimeSelector",
+            path: "WWCalendarTimeSelector",   // where your .swift files are
             exclude: ["Info.plist", "WWCalendarTimeSelector.h"],
             resources: [
-              .process("Resources")
+                .process("../Resources")      // resources folder next to code folder
             ]
         )
     ],
